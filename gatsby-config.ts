@@ -1,7 +1,7 @@
-import type { GatsbyConfig, PluginRef } from "gatsby"
-import "dotenv/config"
+import type { GatsbyConfig, PluginRef } from "gatsby";
+import "dotenv/config";
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -24,6 +24,19 @@ const config: GatsbyConfig = {
       // See the theme's README for all available options
       options: {},
     },
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {},
+    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     // The unique name for each instance
+    //     name: `gatsby-theme-cara`,
+    //     // Path to the directory
+    //     path: `${__dirname}/src/@lekoarts/gatsby-theme-cara/`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -50,6 +63,7 @@ const config: GatsbyConfig = {
         ],
       },
     },
+
     // You can remove this plugin if you don't need it
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-statoscope`,
@@ -60,6 +74,6 @@ const config: GatsbyConfig = {
       },
     },
   ].filter(Boolean) as Array<PluginRef>,
-}
+};
 
-export default config
+export default config;
