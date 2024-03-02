@@ -7,9 +7,15 @@ import {
   UpDown,
   UpDownWide,
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
-import AboutMDX from "../sections/about.mdx";
-// import TestMDX from "../sections/test.mdx";
-const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+import SkillsMDX from "../sections/skills.mdx";
+
+const Skills = ({
+  offset,
+  factor = 1,
+}: {
+  offset: number;
+  factor?: number;
+}) => (
   <div>
     <Divider
       bg="divider"
@@ -109,11 +115,10 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <AboutMDX />
-        {/* <TestMDX /> */}
+        <SkillsMDX />
       </Inner>
     </Content>
   </div>
 );
 
-export default About;
+export default Skills;
