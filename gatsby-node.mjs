@@ -23,7 +23,7 @@ export const createPages = async ({ actions }, themeOptions) => {
   //project pages /Wizschool /Mofas(hackersholdings)
   works.forEach((company) => {
     createPage({
-      path: `/${en[`${company.name}`]}`,
+      path: `/${company.link}`,
       component: projectPageTemplate,
       context: {
         title: en[`${company.name}`],

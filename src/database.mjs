@@ -4,6 +4,7 @@ const works = [
     position: "WORK_WIZ_POSITION",
     period: "WORK_WIZ_PERIOD",
     description: "WORK_WIZ_DESC",
+    link: "wizschool",
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -160,6 +161,7 @@ const works = [
     position: "WORK_HACKERS_POSITION",
     period: "WORK_HACKERS_PERIOD",
     description: "WORK_HACKERS_DESC",
+    link: "mofas",
     tech: ["SKILL_PHP", "SKILL_BOOTSTRAP", "SKILL_HTML_CSS", "SKILL_NGINX"],
     projects: [
       {
