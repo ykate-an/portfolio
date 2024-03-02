@@ -1,55 +1,43 @@
 import { ko, en } from "../../../locale/index.mjs";
+import { works } from "../../../database.mjs";
+
+export const bgColors = [
+  "linear-gradient(to right, #D585FF 0%, #00FFEE 100%)",
+  "linear-gradient(to right, rgba(244,132,132,1) 0%, rgba(238,174,202,1) 30%, rgba(236,245,255,1) 100%)",
+  "linear-gradient(to right, #D4145A 0%, #FBB03B 100%)",
+  "linear-gradient(to right, #662D8C 0%, #ED1E79 100%)",
+];
+export const companys = works.map((company, idx) => {
+  return {
+    ...company,
+    bg: bgColors[idx],
+  };
+});
 
 ## Projects
-
-{/* http://localhost:8000/404.html */}
 
 <ProjectCard
   title="Samsung SDSE"
   link="/404.html"
-  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+  bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
 >
   test
 </ProjectCard>
 
+{Object.keys(companys).map((key) => (
+
 <ProjectCard
-  title="CodeBrick"
-  link="https://www.lekoarts.de/gatsby/tips-and-tricks-for-gatsby?utm_source=cara&utm_medium=Theme"
-  bg="linear-gradient(to right, rgba(244,132,132,1) 0%, rgba(238,174,202,1) 30%, rgba(236,245,255,1) 100%)"
+  title={en[`${companys[key].name}`]}
+  s
+  link={`/${companys[key].link}`}
+  bg={companys[key].bg}
+  key={key}
 >
-  test
-</ProjectCard>
 
-<ProjectCard
-  title={en["WORK_WIZ_NAME"]}
-  link="https://www.lekoarts.de/gatsby/tips-and-tricks-for-gatsby?utm_source=cara&utm_medium=Theme"
-  bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
-> {en["WORK_WIZ_POSITION"]}
-
-> {en["WORK_WIZ_PERIOD"]}
-
-> {en["WORK_WIZ_DESC"]}
+{en[`${companys[key].position}`]}
+{en[`${companys[key].period}`]}
+{en[`${companys[key].description}`]}
 
 </ProjectCard>
 
-<ProjectCard
-   title={en["WORK_HACKERS_NAME"]}
-  link="/project01.html"
-bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
-
-> {en["WORK_HACKERS_POSITION"]}
-
-> {en["WORK_HACKERS_PERIOD"]}
-
-> {en["WORK_HACKERS_DESC"]}
-
-</ProjectCard>
-
-<ProjectCard
-  title="Theme UI Plugin for Figma"
-  link="https://www.lekoarts.de/design/introducing-the-theme-ui-plugin-for-figma?utm_source=cara&utm_medium=Theme"
-  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
->
-  The Theme UI plugin for Figma allows for a workflow where Theme UI is the
-  starting point both for design & development.
-</ProjectCard>
+))}
