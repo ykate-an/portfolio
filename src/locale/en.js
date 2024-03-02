@@ -8,8 +8,11 @@ const en = {
   HEADER_RESUME_LINK: "yeokyeong-resume.github.io",
 
   /* intro */
+  INTRO_TITLE: "Hello. my name is YeoKyeong An,",
+  INTRO_HINT: "(Tip : you can just call me Kate😄)",
+
   INTRO_DESCRIPTION:
-    "Hello. my name is Yeo-kyeong An, a web developer with two years of experience in front-end and back-end web development.",
+    "A web developer with two years of experience in front-end and back-end web development.",
 
   /* utils */
   UTILS_DOWNLOAD_TITLE: "resume",
@@ -324,6 +327,6 @@ const en = {
     "A game in which  the police catch the thief, and if the police move while the thief is looking backwards, the game will end.",
   PROJECT_THEIF_DETAILS_02:
     "When a thief is looking ahead, the police eat various items on the street and raise my scores.",
-  PROJECT_THEIF_DETAILS_03: "Collaborated with designer and developer"
+  PROJECT_THEIF_DETAILS_03: "Collaborated with designer and developer",
 };
 export default en;

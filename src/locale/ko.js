@@ -8,6 +8,9 @@ const ko = {
   HEADER_RESUME_LINK: "yeokyeong-resume.github.io",
 
   /* intro */
+  INTRO_TITLE: "Hello. my name is Yeo-kyeong An,",
+  INTRO_HINT: "Tip: you can just call me Kate😄",
+
   INTRO_DESCRIPTION:
     "안녕하세요 웹 개발(프론트엔트/백엔드) 2년차 개발자 안여경입니다.",
 
@@ -310,6 +313,6 @@ const ko = {
     "경찰(나)이 도둑을 잡는게임으로, 도둑이 뒤를 돌아보고 있는 동안 경찰이 움직이면 게임 종료",
   PROJECT_THEIF_DETAILS_02:
     "도둑이 앞을 보고 있을때 경찰(나)는 길에 있는 각종 아이템을 먹어서 점수를 올리는 방식",
-  PROJECT_THEIF_DETAILS_03: "디자이너,개발자와 팀으로 협업"
+  PROJECT_THEIF_DETAILS_03: "디자이너,개발자와 팀으로 협업",
 };
 export default ko;
