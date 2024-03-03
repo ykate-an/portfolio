@@ -7,10 +7,32 @@ import {
   UpDown,
   UpDownWide,
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
-import AboutMDX from "../sections/about.mdx";
+import { ko, en } from "../../../locale/index.mjs";
 
-const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
-  <div>
+import TestMDX from "../sections/test.mdx";
+
+const Project = ({
+  offset,
+  factor = 1,
+  pages,
+  company,
+}: {
+  offset: number;
+  factor?: number;
+  pages: number;
+  company: Object;
+}) => {
+
+
+  Object.keys(company.tech).map((key)=>{
+
+    
+    console.log(en[`${company.tech[key]}`],111,'tech');    
+    // {en[`${props.company.tech[key]}`]}
+    
+    })
+
+return (  <div>
     <Divider
       bg="divider"
       clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
@@ -18,7 +40,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       offset={offset}
       factor={factor}
     />
-    <Divider speed={0.1} offset={offset} factor={factor}>
+    <Divider speed={0.1} offset={offset} factor={pages - 1}>
       <UpDown>
         <Svg
           icon="box"
@@ -109,10 +131,27 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <AboutMDX />
+        {/* <ProjectContent company={company} /> */}
+        <TestMDX
+          company={company}
+          year={2022}
+          components={{
+            Planet() {
+              return <span style={{ color: "tomato" }}>Pluto</span>;
+            },
+          }}
+        />
       </Inner>
     </Content>
-  </div>
-);
+  </div>)
+};
 
-export default About;
+const ProjectContent = ({ company }: { company: Object }) => {
+  return (
+    <>
+      <h1>ProjectContent{company.name}</h1>
+    </>
+  );
+};
+
+export default Project;

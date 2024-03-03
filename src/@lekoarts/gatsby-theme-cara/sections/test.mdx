@@ -1,3 +1,28 @@
-## TEST
+import { ko, en } from "../../../locale/index.mjs";
 
-> testtest
+
+{/* ## {en[`${props.company.name}`]}
+
+### {en[`${props.company.position}`]}
+
+#### {en[`${props.company.period}`]}
+
+##### {en[`${props.company.description}`]}*/}
+
+> Used Skills
+
+  {Object.keys(props.company.tech).map((key)=>{
+
+    <Planet />
+    // console.log(en[`${props.company.tech[key]}`],111,'tech');    
+    // {en[`${props.company.tech[key]}`]]}
+    
+    })}
+
+{/* {JSON.stringify(props.company.tech)} */}
+
+
+{props.year}
+{props.year}
+
+# Hello _<Planet />_
