@@ -7,7 +7,7 @@ const standardBasePath = `/`;
 export const createPages = async ({ actions }, themeOptions) => {
   const { createPage } = actions;
   const projectPageTemplate = require.resolve(
-    `./src/@lekoarts/gatsby-theme-cara/templates/cara_test.tsx`
+    `./src/@lekoarts/gatsby-theme-cara/templates/project-template.tsx`
   );
 
   const basePath = themeOptions.basePath || standardBasePath;
@@ -20,13 +20,14 @@ export const createPages = async ({ actions }, themeOptions) => {
     ),
   });
 
-  //project pages /Wizschool /Mofas(hackersholdings)
+  //project pages
   works.forEach((company) => {
     createPage({
       path: `/${company.link}`,
       component: projectPageTemplate,
       context: {
         title: en[`${company.name}`],
+        company: company,
       },
     });
   });
