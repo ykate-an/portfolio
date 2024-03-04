@@ -185,7 +185,7 @@ const ProjectContent = ({ company }: { company:  Object}) => {
               <Themed.h5>{en[`${project.features}`]}</Themed.h5>
               <Themed.h5>{en[`${project.outcome}`]}</Themed.h5>
               <Themed.h5>{en[`${project.tech}`]}</Themed.h5>
-              {project.link && <Themed.h5>{en[`${project.link}`]}</Themed.h5>}
+              {project.path && <Themed.h5>{en[`${project.path}`]}</Themed.h5>}
               {project.details &&
                 project.details.map((detail, i) => {
                   return <Themed.b key={i}>{en[`${detail}`]}</Themed.b>;

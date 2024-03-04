@@ -6,11 +6,10 @@ const standardBasePath = `/`;
 
 export const createPages = async ({ actions }, themeOptions) => {
   const { createPage } = actions;
-  const projectPageTemplate = require.resolve(
-    `./src/@lekoarts/gatsby-theme-cara/templates/project-template.tsx`
-  );
-
   const basePath = themeOptions.basePath || standardBasePath;
+  const workTemplate = require.resolve(
+    `./src/@lekoarts/gatsby-theme-cara/templates/work-template.tsx`
+  );
 
   //index page
   createPage({
@@ -20,11 +19,11 @@ export const createPages = async ({ actions }, themeOptions) => {
     ),
   });
 
-  //project pages
+  //work pages
   works.forEach((company) => {
     createPage({
-      path: `/${company.link}`,
-      component: projectPageTemplate,
+      path: `/${company.path}`,
+      component: workTemplate,
       context: {
         title: en[`${company.name}`],
         company: company,

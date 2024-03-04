@@ -3,7 +3,7 @@ export const Works: ({
     position: string;
     period: string;
     description: string;
-    link: string;
+    path: string;
     tech: string[];
     projects: ({
         title: string;
@@ -13,7 +13,7 @@ export const Works: ({
         features: string;
         outcome: string;
         tech: string;
-        link: string;
+        path: string;
         details: string[];
     } | {
         title: string;
@@ -24,7 +24,7 @@ export const Works: ({
         outcome: string;
         tech: string;
         details: string[];
-        link?: undefined;
+        path?: undefined;
     } | {
         title: string;
         period: string;
@@ -33,7 +33,7 @@ export const Works: ({
         features: string;
         tech: string;
         outcome?: undefined;
-        link?: undefined;
+        path?: undefined;
         details?: undefined;
     })[];
 } | {
@@ -41,7 +41,7 @@ export const Works: ({
     position: string;
     period: string;
     description: string;
-    link: string;
+    path: string;
     tech: string[];
     projects: ({
         title: string;
