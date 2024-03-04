@@ -28,15 +28,25 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-typescript`,
       options: {},
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     // The unique name for each instance
-    //     name: `gatsby-theme-cara`,
-    //     // Path to the directory
-    //     path: `${__dirname}/src/@lekoarts/gatsby-theme-cara/`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-image`,
+      options: {},
+    }, 
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {},
+    }, 
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {},
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
