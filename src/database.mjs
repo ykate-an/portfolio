@@ -177,8 +177,8 @@ const works = [
         ],
         appendix: [
           "Presentation_01.png",
-          "Presentation_02.png",
-          "Presentation_03.png",
+          // "Presentation_02.png",
+          // "Presentation_03.png",
         ],
       },
       {
