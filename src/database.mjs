@@ -225,6 +225,7 @@ const projects = [
     outcome: "PROJECT_DIVE_OUTCOME",
     link: "https://play.google.com/store/apps/details?id=com.gsb.dive",
     details: ["PROJECT_DIVE_DETAILS_01", "PROJECT_DIVE_DETAILS_02"],
+    path: "dive-app",
     appendix: [
       "dive_1.jpeg",
       "dive_2.jpeg",
@@ -242,6 +243,7 @@ const projects = [
     role: "PROJECT_LECTURE_ROLE",
     outcome: "PROJECT_LECTURE_OUTCOME",
     details: ["PROJECT_LECTURE_DETAILS_01", "PROJECT_LECTURE_DETAILS_02"],
+    path: "lecture-app",
     appendix: [
       "class_1.png",
       "class_2.png",
@@ -260,6 +262,14 @@ const projects = [
       "PROJECT_THEIF_DETAILS_01",
       "PROJECT_THEIF_DETAILS_02",
       "PROJECT_THEIF_DETAILS_03",
+    ],
+    path: "thief-pc",
+    appendix: [
+      "thief_1.png",
+      "class_2.png",
+      "class_3.png",
+      "class_4.png",
+      "class_5.png",
     ],
   },
 ];
