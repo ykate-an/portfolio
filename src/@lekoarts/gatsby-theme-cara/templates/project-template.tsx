@@ -8,7 +8,7 @@ import Project from "../components/project";
 const Cara = ({ pageContext }: { pageContext: Object }) => (
   <Layout>
     <Parallax pages={5}>
-      <Project offset={0} factor={1} company={pageContext.company} pages={5} />
+      <Project offset={0} factor={4} company={pageContext.company} pages={5} />
     </Parallax>
   </Layout>
 );
