@@ -8,23 +8,11 @@ import { ko, en } from "../../../locale/index.mjs";
 import ProjectItem from "../components/subComponents/project-item";
 
 const Cara = ({ pageContext }: { pageContext: Object }) => {
-  const { title, description, name, period, position, projects, tech } =
-    pageContext.contentData;
+  console.log(pageContext, 111, "pageContext in project-template");
   return (
     <Layout>
       <Parallax pages={5}>
-        <Themed.h1>{en[`${title}`]}</Themed.h1>
-        <Themed.h5>{en[`${name}`]}</Themed.h5>
-        <Themed.h5>{en[`${period}`]}</Themed.h5>
-        <Themed.h5>{en[`${description}`]}</Themed.h5>
-        <Themed.h5>{en[`${position}`]}</Themed.h5>
-        <Themed.h5>{en[`${tech}`]}</Themed.h5>
-
-        {
-          projects.map((project, idx) => {
-            return (<ProjectItem project={project} />)
-          })}
-
+      <ProjectItem project={pageContext.contentData} />
       </Parallax>
     </Layout>
   );

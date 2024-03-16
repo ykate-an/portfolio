@@ -1,5 +1,5 @@
 import { ko, en } from "../../../locale/index.mjs";
-import { works } from "../../../database.mjs";
+import { projects } from "../../../database.mjs";
 
 export const bgColors = [
   "linear-gradient(to right, #D585FF 0%, #00FFEE 100%)",
@@ -7,7 +7,7 @@ export const bgColors = [
   "linear-gradient(to right, #D4145A 0%, #FBB03B 100%)",
   "linear-gradient(to right, #662D8C 0%, #ED1E79 100%)",
 ];
-export const companys = works.map((company, idx) => {
+export const companys = projects.map((company, idx) => {
   return {
     ...company,
     bg: bgColors[idx],

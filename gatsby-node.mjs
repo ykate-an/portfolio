@@ -10,9 +10,9 @@ export const createPages = async ({ actions }, themeOptions) => {
   const workPageTemplate = require.resolve(
     `./src/@lekoarts/gatsby-theme-cara/templates/works-page-template.tsx`
   );
-  // const projectTemplate = require.resolve(
-  //   `./src/@lekoarts/gatsby-theme-cara/templates/project-item-template.tsx`
-  // );
+  const projectsPageTemplate = require.resolve(
+    `./src/@lekoarts/gatsby-theme-cara/templates/projects-page-template.tsx`
+  );
 
   //index page
   createPage({
@@ -23,26 +23,26 @@ export const createPages = async ({ actions }, themeOptions) => {
   });
 
   //work pages
-  works.forEach((company) => {
+  works.forEach((item) => {
     createPage({
-      path: `/${company.path}`,
+      path: `/${item.path}`,
       component: workPageTemplate,
       context: {
-        title: en[`${company.name}`],
-        contentData: company,
+        title: en[`${item.name}`],
+        contentData: item,
       },
     });
   });
 
-  //personal project pages
-  // works.forEach((company) => {
-  //   createPage({
-  //     path: `/${company.path}`,
-  //     component: projectTemplate,
-  //     context: {
-  //       title: en[`${company.name}`],
-  //       contentData: company,
-  //     },
-  //   });
-  // });
+  //projects project pages
+  projects.forEach((item) => {
+    createPage({
+      path: `/${item.path}`,
+      component: projectsPageTemplate,
+      context: {
+        title: en[`${item.name}`],
+        contentData: item,
+      },
+    });
+  });
 };
