@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Themed } from "@theme-ui/mdx";
-import { ko, en } from "../../../locale/index.mjs";
+import { ko, en } from "../../../../locale/index.mjs";
 
-const ProjectDetail = ({ contentData }: { contentData: Object }) => {
-    console.log(contentData, 111, "contentData at project-detail page");
+const ProjectItem = ({ project }: { project: Object }) => {
+    console.log(project, 111, "project at project-item page");
     const {
       title,
       where,
@@ -13,7 +13,7 @@ const ProjectDetail = ({ contentData }: { contentData: Object }) => {
       details = undefined,
       appendix = undefined,
       outcome = undefined,
-    } = contentData;
+    } = project;
     return (
       <>
         <Themed.h1>{en[`${title}`]}</Themed.h1>
@@ -32,13 +32,13 @@ const ProjectDetail = ({ contentData }: { contentData: Object }) => {
                       </Themed.ul>
                     )
                   })}
-  
           {appendix && appendix.map((img, i) => {
                     return (
                       <img
-                        src={require(`../../../assets/${img}`).default}
+                        src={require(`../../../../assets/${img}`).default}
                         key={i}
                         alt="img"
+                        style={{"width":"200px","height":"200px"}}
                       />
                     );
                   })} 
@@ -47,4 +47,4 @@ const ProjectDetail = ({ contentData }: { contentData: Object }) => {
     );
   };
 
-export default ProjectDetail
+export default ProjectItem

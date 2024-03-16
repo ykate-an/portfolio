@@ -9,10 +9,9 @@ import {
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
 import { Themed } from "@theme-ui/mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import ProjectsMDX from "../sections/projects.mdx"
+import WorksMDX from "../sections/works.mdx"
 
-
-const Projects = ({
+const Works = ({
   offset,
   factor = 1,
   pages,
@@ -134,7 +133,7 @@ const Projects = ({
         // justifyContent="start"
       >
         <Inner>
- <ProjectsMDX />
+ <WorksMDX />
           
            {/* <div   sx={{
             display: `grid`,
@@ -153,4 +152,4 @@ const Projects = ({
 
 
 
-export default Projects;
+export default Works;
