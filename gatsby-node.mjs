@@ -7,11 +7,11 @@ const standardBasePath = `/`;
 export const createPages = async ({ actions }, themeOptions) => {
   const { createPage } = actions;
   const basePath = themeOptions.basePath || standardBasePath;
-  const workTemplate = require.resolve(
-    `./src/@lekoarts/gatsby-theme-cara/templates/work-template.tsx`
-  );
-  const prjectTemplate = require.resolve(
-    `./src/@lekoarts/gatsby-theme-cara/templates/project-template.tsx`
+  // const workTemplate = require.resolve(
+  //   `./src/@lekoarts/gatsby-theme-cara/templates/work-template.tsx`
+  // );
+  const projectTemplate = require.resolve(
+    `./src/@lekoarts/gatsby-theme-cara/templates/project-detail-template.tsx`
   );
 
   //index page
@@ -23,25 +23,25 @@ export const createPages = async ({ actions }, themeOptions) => {
   });
 
   //work pages
+  // works.forEach((company) => {
+  //   createPage({
+  //     path: `/${company.path}`,
+  //     component: workTemplate,
+  //     context: {
+  //       title: en[`${company.name}`],
+  //       contentData: company,
+  //     },
+  //   });
+  // });
+
+  //personal project pages
   works.forEach((company) => {
     createPage({
       path: `/${company.path}`,
-      component: workTemplate,
+      component: projectTemplate,
       context: {
         title: en[`${company.name}`],
         contentData: company,
-      },
-    });
-  });
-
-  //personal project pages
-  projects.forEach((project) => {
-    createPage({
-      path: `/${project.path}`,
-      component: prjectTemplate,
-      context: {
-        title: en[`${project.name}`],
-        contentData: project,
       },
     });
   });

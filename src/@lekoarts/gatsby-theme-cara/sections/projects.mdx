@@ -14,19 +14,13 @@ export const companys = works.map((company, idx) => {
   };
 });
 
-## Projects
+## Personal projects
 
-<ProjectCard
-  title="Samsung SDSE"
-  link="/404.html"
-  bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
->
-  test
-</ProjectCard>
+{Object.keys(companys).map((key) => {
 
-{Object.keys(companys).map((key) => (
 
-<ProjectCard
+console.log(companys[key],111,'companys[key]',`/${companys[key].path}`);
+return (<ProjectCard
   title={en[`${companys[key].name}`]}
   s
   link={`/${companys[key].path}`}
@@ -38,6 +32,6 @@ export const companys = works.map((company, idx) => {
 {en[`${companys[key].period}`]}
 {en[`${companys[key].description}`]}
 
-</ProjectCard>
+</ProjectCard>)
 
-))}
+})}

@@ -7,22 +7,19 @@ import {
   UpDown,
   UpDownWide,
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
-import { ko, en } from "../../../locale/index.mjs";
 import { Themed } from "@theme-ui/mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import ProjectsMDX from "../sections/projects.mdx"
 
-import TestMDX from "../sections/test.mdx";
 
-const Work = ({
+const Projects = ({
   offset,
   factor = 1,
   pages,
-  contentData,
 }: {
   offset: number;
   factor?: number;
   pages: number;
-  contentData: Object;
 }) => {
   return (
     <div>
@@ -128,82 +125,32 @@ const Work = ({
           top="70%"
         />
       </Divider>
+    
+
       <Content
         speed={0.4}
         offset={offset}
         factor={factor}
-        justifyContent="start"
+        // justifyContent="start"
       >
         <Inner>
-          <WorkInner contentData={contentData} />
-          {/* <TestMDX
-        contentData={contentData}
-        year={2022}
-        components={{
-          Planet() {
-            return <span style={{ color: "tomato" }}>Pluto</span>;
-          },
-        }}
-      /> */}
-
-          {/* <Themed.h1>test Theme</Themed.h1> */}
+ <ProjectsMDX />
+          
+           {/* <div   sx={{
+            display: `grid`,
+            gridGap: [4, 4, 4, 5],
+            gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
+            h2: { gridColumn: `-1/1`, color: `white !important` },
+          }}>
+           </div> */}
+            
         </Inner>
       </Content>
+      
     </div>
   );
 };
 
-const WorkInner = ({ contentData }: { contentData:  Object}) => {
 
-  console.log(contentData,111,'contentData');
-  const { name, position, period, description, projects, tech } = contentData ;
-  return (
-    <>
-      <Themed.h1>{en[`${name}`]}</Themed.h1>
-      <Themed.h5>{en[`${position}`]}</Themed.h5>
-      <Themed.h5>{en[`${period}`]}</Themed.h5>
-      <Themed.h5>{en[`${description}`]}</Themed.h5>
 
-      <Themed.h2>Used Skills</Themed.h2>
-
-      {tech.map((skill, i) => {
-        return <Themed.li key={i}>{en[`${skill}`]}</Themed.li>;
-      })}
-
-      <Themed.h2>Projects</Themed.h2>
-
-      {projects.map((project, i) => {
-        return (
-          <Themed.div key={i}>
-            -
-            <Themed.ul>
-              <Themed.h4>{en[`${project.title}`]}</Themed.h4>
-              <Themed.h5>{en[`${project.period}`]}</Themed.h5>
-              <Themed.h5>{en[`${project.description}`]}</Themed.h5>
-              <Themed.h5>{en[`${project.role}`]}</Themed.h5>
-              <Themed.h5>{en[`${project.features}`]}</Themed.h5>
-              <Themed.h5>{en[`${project.outcome}`]}</Themed.h5>
-              <Themed.h5>{en[`${project.tech}`]}</Themed.h5>
-              {project.path && <Themed.h5>{en[`${project.path}`]}</Themed.h5>}
-              {project.details &&
-                project.details.map((detail, i) => {
-                  return <Themed.b key={i}>{en[`${detail}`]}</Themed.b>;
-                })}
-              {project.appendix &&
-                project.appendix.map((img, i) => {
-                  return (
-                    <img
-                      src={require(`../../../assets/${img}`).default}
-                      alt="img"
-                    />
-                  );
-                })}
-            </Themed.ul>
-          </Themed.div>
-        );
-      })}
-    </>
-  );
-};
-
-export default Work;
+export default Projects;
