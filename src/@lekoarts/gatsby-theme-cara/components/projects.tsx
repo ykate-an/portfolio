@@ -9,9 +9,15 @@ import {
   UpDown,
   UpDownWide,
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
-import WorksMDX from "../sections/works.mdx";
+import ProjectsMDX from "../sections/projects.mdx";
 
-const Works = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
+const Projects = ({
+  offset,
+  factor = 2,
+}: {
+  offset: number;
+  factor?: number;
+}) => (
   <div>
     <Divider
       bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
@@ -20,12 +26,7 @@ const Works = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
       offset={1.1}
       factor={factor}
     />
-    <Content
-      speed={0.4}
-      offset={offset}
-      factor={factor}
-      // justifyContent="start"
-    >
+    <Content speed={0.4} offset={offset + 0.2} factor={factor}>
       <Inner>
         <div
           sx={{
@@ -35,7 +36,7 @@ const Works = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
             h2: { gridColumn: `-1/1`, color: `white !important` },
           }}
         >
-          <WorksMDX />
+          <ProjectsMDX />
         </div>
       </Inner>
     </Content>
@@ -140,4 +141,4 @@ const Works = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   </div>
 );
 
-export default Works;
+export default Projects;
