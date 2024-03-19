@@ -1,9 +1,9 @@
 const en = {
   /* header */
-  HEADER_NAME: "Yeo Kyeong An",
+  HEADER_NAME: "YeoKyeong An",
   HEADER_JOB_POSITION: "Web Developer",
   HEADER_EMAIL: "yeokyeong1004@gmail.com",
-  HEADER_PHONE: "010 8632 0833",
+  HEADER_PHONE: "(+44)7734843268",
   HEADER_GITHUB: "github.com/yeokyeong",
   HEADER_RESUME_LINK: "yeokyeong-resume.github.io",
 
@@ -57,6 +57,19 @@ const en = {
   SKILL_NOTION: "Notion",
 
   /* work experiences */
+
+  WORK_SDSE_NAME: "Samsung SDSE",
+  WORK_SDSE_POSITION: "Junior Web Developer",
+  WORK_SDSE_PERIOD: "2019.08 - 2021.03",
+  WORK_SDSE_DESC:
+    "Enim sint amet Lorem occaecat velit proident id culpa cupidatat deserunt.",
+
+  WORK_CB_NAME: "Codebrick",
+  WORK_CB_POSITION: "Junior Web Developer",
+  WORK_CB_PERIOD: "2019.08 - 2021.03",
+  WORK_CB_DESC:
+    "Enim sint amet Lorem occaecat velit proident id culpa cupidatat deserunt.",
+
   WORK_WIZ_NAME: "Wizschool",
   WORK_WIZ_POSITION: "Junior Web Developer",
   WORK_WIZ_PERIOD: "2019.08 - 2021.03",
@@ -79,6 +92,68 @@ const en = {
   WORK_PROJECT_PERIOD: "Period",
   WORK_PROJECT_DETAIL: "Details",
   WORK_PROJECT_APPENDIX: "Appendix",
+
+  /* Samsung SDSE */
+  WORK_SDSE_PROJECT_01_TITLE: "SDSE project 1",
+  WORK_SDSE_PROJECT_01_PERIOD: "2019.10 - 2020.01",
+  WORK_SDSE_PROJECT_01_DESC:
+    "Online video coding education platform by using webRTC",
+  // WORK_SDSE_PROJECT_01_FEATURES:
+  //   "온라인 수업, 선생님과 학생의 에디터 상태 공유, SMS, 수업예약 등",
+  WORK_SDSE_PROJECT_01_OUTCOME: "Launch of `Wizlive` service",
+  // WORK_SDSE_PROJECT_01_TECH: "react,js,node.js,mysql,HTML/CSS",
+  WORK_SDSE_PROJECT_01_ROLE:
+    "Developed class reservation system and Developed at home page part of front-end,back-end",
+  WORK_SDSE_PROJECT_01_DETAILS_01:
+    " Developed reservation of teacher/student(class synchronization, SMS, db table structure, UI)",
+  WORK_SDSE_PROJECT_01_DETAILS_02:
+    "Developed student's class state on back-end and front-end",
+  WORK_SDSE_PROJECT_01_DETAILS_03: "Developed main page UI of service",
+
+  WORK_SDSE_PROJECT_02_TITLE: "SDSE project 2",
+  WORK_SDSE_PROJECT_02_PERIOD: "2020.02 - 2020.04",
+  WORK_SDSE_PROJECT_02_DESC: " Separated services user service from IDE editor",
+  // WORK_SDSE_PROJECT_02_FEATURES:
+  //   "코드 에디터, 에디터 튜토리얼 , 구독, 좋아요, 게시판 등",
+  WORK_SDSE_PROJECT_02_OUTCOME:
+    "Got more users, created user community and launched of service",
+  // WORK_SDSE_PROJECT_02_TECH: "react,js,node.js,mysql,HTML/CSS",
+  WORK_SDSE_PROJECT_02_ROLE:
+    "Constructured entire page layout and updated IDE UI",
+  WORK_SDSE_PROJECT_02_DETAILS_01:
+    "Developed new pages and reconstructured page because of seperated service",
+  WORK_SDSE_PROJECT_02_DETAILS_02: "Reconstructured IDE ,updated of entire UI ",
+
+  /* Codebrick */
+  WORK_CB_PROJECT_01_TITLE: "codebrick project 1",
+  WORK_CB_PROJECT_01_PERIOD: "2019.10 - 2020.01",
+  WORK_CB_PROJECT_01_DESC:
+    "Online video coding education platform by using webRTC",
+  // WORK_CB_PROJECT_01_FEATURES:
+  //   "온라인 수업, 선생님과 학생의 에디터 상태 공유, SMS, 수업예약 등",
+  WORK_CB_PROJECT_01_OUTCOME: "Launch of `Wizlive` service",
+  // WORK_CB_PROJECT_01_TECH: "react,js,node.js,mysql,HTML/CSS",
+  WORK_CB_PROJECT_01_ROLE:
+    "Developed class reservation system and Developed at home page part of front-end,back-end",
+  WORK_CB_PROJECT_01_DETAILS_01:
+    " Developed reservation of teacher/student(class synchronization, SMS, db table structure, UI)",
+  WORK_CB_PROJECT_01_DETAILS_02:
+    "Developed student's class state on back-end and front-end",
+  WORK_CB_PROJECT_01_DETAILS_03: "Developed main page UI of service",
+
+  WORK_CB_PROJECT_02_TITLE: "codebrick project 2",
+  WORK_CB_PROJECT_02_PERIOD: "2020.02 - 2020.04",
+  WORK_CB_PROJECT_02_DESC: " Separated services user service from IDE editor",
+  // WORK_CB_PROJECT_02_FEATURES:
+  //   "코드 에디터, 에디터 튜토리얼 , 구독, 좋아요, 게시판 등",
+  WORK_CB_PROJECT_02_OUTCOME:
+    "Got more users, created user community and launched of service",
+  // WORK_CB_PROJECT_02_TECH: "react,js,node.js,mysql,HTML/CSS",
+  WORK_CB_PROJECT_02_ROLE:
+    "Constructured entire page layout and updated IDE UI",
+  WORK_CB_PROJECT_02_DETAILS_01:
+    "Developed new pages and reconstructured page because of seperated service",
+  WORK_CB_PROJECT_02_DETAILS_02: "Reconstructured IDE ,updated of entire UI ",
 
   /* wizschool */
   WORK_WIZ_PROJECT_01_TITLE: "Developed `wizlive` service",
