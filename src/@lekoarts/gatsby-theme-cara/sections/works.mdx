@@ -1,0 +1,37 @@
+import { ko, en } from "../../../locale/index.mjs";
+import { works } from "../../../database.mjs";
+
+export const bgColors = [
+  "linear-gradient(to right, #D585FF 0%, #00FFEE 100%)",
+  "linear-gradient(to right, rgba(244,132,132,1) 0%, rgba(238,174,202,1) 30%, rgba(236,245,255,1) 100%)",
+  "linear-gradient(to right, #D4145A 0%, #FBB03B 100%)",
+  "linear-gradient(to right, #662D8C 0%, #ED1E79 100%)",
+];
+export const companys = works.map((company, idx) => {
+  return {
+    ...company,
+    bg: bgColors[idx],
+  };
+});
+
+## Works
+
+{Object.keys(companys).map((key) => {
+
+
+console.log(companys[key],111,'companys[key]',`/${companys[key].path}`);
+return (<ProjectCard
+  title={en[`${companys[key].name}`]}
+  s
+  link={`/${companys[key].path}`}
+  bg={companys[key].bg}
+  key={key}
+>
+
+{en[`${companys[key].position}`]}
+{en[`${companys[key].period}`]}
+{en[`${companys[key].description}`]}
+
+</ProjectCard>)
+
+})}

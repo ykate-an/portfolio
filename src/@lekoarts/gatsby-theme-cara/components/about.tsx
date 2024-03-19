@@ -8,7 +8,7 @@ import {
   UpDownWide,
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
 import AboutMDX from "../sections/about.mdx";
-// import TestMDX from "../sections/test.mdx";
+
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
@@ -110,7 +110,6 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
         <AboutMDX />
-        {/* <TestMDX /> */}
       </Inner>
     </Content>
   </div>

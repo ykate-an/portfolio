@@ -1,24 +1,10 @@
-import diveImg01 from "./assets";
-import diveImg02 from "./assets/dive_2.jpeg";
-import diveImg03 from "./assets/dive_3.jpeg";
-import diveImg04 from "./assets/dive_4.jpeg";
-import diveImg05 from "./assets/dive_5.jpeg";
-import diveImg06 from "./assets/dive_6.jpeg";
-import classImg01 from "./assets/class_1.png";
-import classImg02 from "./assets/class_2.png";
-import classImg03 from "./assets/class_3.png";
-import classImg04 from "./assets/class_4.png";
-import classImg05 from "./assets/class_5.png";
-import ptImg01 from "./assets/Presentation_01.png";
-import ptImg02 from "./assets/Presentation_02.png";
-import ptImg03 from "./assets/Presentation_03.png";
-
 const works = [
   {
     name: "WORK_WIZ_NAME",
     position: "WORK_WIZ_POSITION",
     period: "WORK_WIZ_PERIOD",
     description: "WORK_WIZ_DESC",
+    path: "wizschool",
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -175,6 +161,7 @@ const works = [
     position: "WORK_HACKERS_POSITION",
     period: "WORK_HACKERS_PERIOD",
     description: "WORK_HACKERS_DESC",
+    path: "mofas",
     tech: ["SKILL_PHP", "SKILL_BOOTSTRAP", "SKILL_HTML_CSS", "SKILL_NGINX"],
     projects: [
       {
@@ -188,7 +175,11 @@ const works = [
           "WORK_HACKERS_PROJECT_01_DETAILS_01",
           "WORK_HACKERS_PROJECT_01_DETAILS_02",
         ],
-        appendix: [ptImg01, ptImg02, ptImg03],
+        appendix: [
+          "Presentation_01.png",
+          // "Presentation_02.png",
+          // "Presentation_03.png",
+        ],
       },
       {
         title: "WORK_HACKERS_PROJECT_02_TITLE",
@@ -234,13 +225,14 @@ const projects = [
     outcome: "PROJECT_DIVE_OUTCOME",
     link: "https://play.google.com/store/apps/details?id=com.gsb.dive",
     details: ["PROJECT_DIVE_DETAILS_01", "PROJECT_DIVE_DETAILS_02"],
+    path: "dive-app",
     appendix: [
-      diveImg01,
-      diveImg02,
-      diveImg03,
-      diveImg04,
-      diveImg05,
-      diveImg06,
+      "dive_1.jpeg",
+      "dive_2.jpeg",
+      "dive_3.jpeg",
+      "dive_4.jpeg",
+      "dive_5.jpeg",
+      "dive_6.jpeg",
     ],
   },
   {
@@ -251,7 +243,14 @@ const projects = [
     role: "PROJECT_LECTURE_ROLE",
     outcome: "PROJECT_LECTURE_OUTCOME",
     details: ["PROJECT_LECTURE_DETAILS_01", "PROJECT_LECTURE_DETAILS_02"],
-    appendix: [classImg01, classImg02, classImg03, classImg04, classImg05],
+    path: "lecture-app",
+    appendix: [
+      "class_1.png",
+      "class_2.png",
+      "class_3.png",
+      "class_4.png",
+      "class_5.png",
+    ],
   },
   {
     title: "PROJECT_THEIF_TITLE",
@@ -263,6 +262,14 @@ const projects = [
       "PROJECT_THEIF_DETAILS_01",
       "PROJECT_THEIF_DETAILS_02",
       "PROJECT_THEIF_DETAILS_03",
+    ],
+    path: "thief-pc",
+    appendix: [
+      "thief_1.png",
+      "class_2.png",
+      "class_3.png",
+      "class_4.png",
+      "class_5.png",
     ],
   },
 ];
