@@ -7,7 +7,10 @@ import { Badge } from "theme-ui";
 {Object.keys(interests).map((item)=>{
 return (
 
-<Badge backgroundColor="icon_pink">{en[`${interests[item]}`]}</Badge>)
+<Badge backgroundColor="icon_pink" m={1} p={2}>
+  {en[`${interests[item]}`]}
+</Badge>
+)
 
 })
 }

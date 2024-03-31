@@ -1,5 +1,6 @@
 import { ko, en } from "../../../locale/index.mjs";
 import { projects } from "../../../database.mjs";
+import { Text, Paragraph } from "theme-ui";
 
 export const bgColors = [
   "linear-gradient(to right, #D585FF 0%, #00FFEE 100%)",
@@ -7,30 +8,27 @@ export const bgColors = [
   "linear-gradient(to right, #D4145A 0%, #FBB03B 100%)",
   "linear-gradient(to right, #662D8C 0%, #ED1E79 100%)",
 ];
-export const companys = projects.map((company, idx) => {
+export const personals = projects.map((project, idx) => {
   return {
-    ...company,
+    ...project,
     bg: bgColors[idx],
   };
 });
 
-## Personal projects
+## {<Text>Personal projects</Text>}
 
-{Object.keys(companys).map((key) => {
+{Object.keys(personals).map((key) => {
 
+return (
 
-console.log(companys[key],111,'companys[key]',`/${companys[key].path}`);
-return (<ProjectCard
-  title={en[`${companys[key].name}`]}
-  s
-  link={`/${companys[key].path}`}
-  bg={companys[key].bg}
-  key={key}
->
-
-{en[`${companys[key].position}`]}
-{en[`${companys[key].period}`]}
-{en[`${companys[key].description}`]}
+<ProjectCard
+title={en[`${personals[key].title}`]}
+link={`/${personals[key].path}`}
+bg={personals[key].bg}
+key={key}>
+{<Paragraph>{en[`${personals[key].role}`]}</Paragraph>}
+{<Paragraph pt={1}>{en[`${personals[key].period}`]}</Paragraph>}
+{<Paragraph pt={3}>{en[`${personals[key].description}`]}</Paragraph>}
 
 </ProjectCard>)
 
