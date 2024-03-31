@@ -14,7 +14,7 @@ import Interests from "../components/interests";
 
 const Cara = () => (
   <Layout>
-    <Parallax pages={8}>
+    <Parallax pages={7}>
       <Hero offset={0} factor={1} />
       <About offset={1} factor={1} />
       <Skills offset={2} factor={1} />
