@@ -1,29 +1,16 @@
 import { ko, en } from "../../../locale/index.mjs";
+import { skills } from "../../../database.mjs";
+import { Badge } from "theme-ui";
 
 ## Skills
 
-> {en["SKILL_NODE"]}
+{Object.keys(skills).map((field)=>{
+return ( Object.keys(field).map((item)=>{
+return (
 
-> {en["SKILL_DOCKER"]}
+<Badge backgroundColor="icon_purple">{en[`${skills[field][item]}`]}</Badge>)
 
-> {en["SKILL_NGINX"]}
+        }))
 
-> {en["SKILL_PHP"]}
-
-> {en["SKILL_REACT"]}
-
-> {en["SKILL_HTML_CSS"]}
-
-> {en["SKILL_JAVASCRIPT"]}
-
-> {en["SKILL_FLUTTER"]}
-
-> {en["SKILL_BOOTSTRAP"]}
-
-> {en["SKILL_AWS"]}
-
-> {en["SKILL_ZENKINS"]}
-
-> {en["SKILL_GIT"]}
-
-> {en["SKILL_NOTION"]}
+})
+}
