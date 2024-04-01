@@ -8,7 +8,7 @@ const en = {
   HEADER_RESUME_LINK: "yeokyeong-resume.github.io",
 
   /* intro */
-  INTRO_TITLE: "Hello. my name is YeoKyeong An,",
+  INTRO_TITLE: "Hi. I'm YeoKyeong An",
   INTRO_HINT: "(Tip : you can just call me Kate😄)",
 
   INTRO_DESCRIPTION:
@@ -59,16 +59,16 @@ const en = {
   /* work experiences */
 
   WORK_SDSE_NAME: "Samsung SDSE",
-  WORK_SDSE_POSITION: "Junior Web Developer",
-  WORK_SDSE_PERIOD: "2019.08 - 2021.03",
+  WORK_SDSE_POSITION: "Assistant Engineer",
+  WORK_SDSE_PERIOD: "2022.11 - Present",
   WORK_SDSE_DESC:
     "Enim sint amet Lorem occaecat velit proident id culpa cupidatat deserunt.",
 
   WORK_CB_NAME: "Codebrick",
-  WORK_CB_POSITION: "Junior Web Developer",
-  WORK_CB_PERIOD: "2019.08 - 2021.03",
+  WORK_CB_POSITION: "Frontend Web Developer",
+  WORK_CB_PERIOD: "2021.11 - 2022.07",
   WORK_CB_DESC:
-    "Enim sint amet Lorem occaecat velit proident id culpa cupidatat deserunt.",
+    "A e-commerce company that serves in Indonesia, I was in charege of front-end development.",
 
   WORK_WIZ_NAME: "Wizschool",
   WORK_WIZ_POSITION: "Junior Web Developer",
@@ -94,66 +94,57 @@ const en = {
   WORK_PROJECT_APPENDIX: "Appendix",
 
   /* Samsung SDSE */
-  WORK_SDSE_PROJECT_01_TITLE: "SDSE project 1",
-  WORK_SDSE_PROJECT_01_PERIOD: "2019.10 - 2020.01",
+  WORK_SDSE_PROJECT_01_TITLE: "the development management of Samsung.com",
+  WORK_SDSE_PROJECT_01_PERIOD: "2024.01 - Present",
   WORK_SDSE_PROJECT_01_DESC:
     "Online video coding education platform by using webRTC",
-  // WORK_SDSE_PROJECT_01_FEATURES:
-  //   "온라인 수업, 선생님과 학생의 에디터 상태 공유, SMS, 수업예약 등",
-  WORK_SDSE_PROJECT_01_OUTCOME: "Launch of `Wizlive` service",
-  // WORK_SDSE_PROJECT_01_TECH: "react,js,node.js,mysql,HTML/CSS",
+  WORK_SDSE_PROJECT_01_OUTCOME: "//outcome//",
+  WORK_SDSE_PROJECT_01_TECH: "AEM, HTML/CSS",
   WORK_SDSE_PROJECT_01_ROLE:
-    "Developed class reservation system and Developed at home page part of front-end,back-end",
+    "Managed the AEM development updates and feature additions for Samsung.com pages across all EU subsidiaries.",
   WORK_SDSE_PROJECT_01_DETAILS_01:
-    " Developed reservation of teacher/student(class synchronization, SMS, db table structure, UI)",
+    "Led multiple projects to completion, ensuring adherence to project scope and schedule.",
   WORK_SDSE_PROJECT_01_DETAILS_02:
-    "Developed student's class state on back-end and front-end",
-  WORK_SDSE_PROJECT_01_DETAILS_03: "Developed main page UI of service",
+    "Collaborated with cross-functional teams to identify and resolve project issues in a timely manner.",
+  WORK_SDSE_PROJECT_01_DETAILS_03:
+    "Ensured project deliverables met quality standards and client expectations.",
 
-  WORK_SDSE_PROJECT_02_TITLE: "SDSE project 2",
-  WORK_SDSE_PROJECT_02_PERIOD: "2020.02 - 2020.04",
-  WORK_SDSE_PROJECT_02_DESC: " Separated services user service from IDE editor",
-  // WORK_SDSE_PROJECT_02_FEATURES:
-  //   "코드 에디터, 에디터 튜토리얼 , 구독, 좋아요, 게시판 등",
-  WORK_SDSE_PROJECT_02_OUTCOME:
-    "Got more users, created user community and launched of service",
-  // WORK_SDSE_PROJECT_02_TECH: "react,js,node.js,mysql,HTML/CSS",
+  WORK_SDSE_PROJECT_02_TITLE:
+    "Data Analytics Optimization with Enhancing Accuracy, Training, and Tag Implementation",
+  WORK_SDSE_PROJECT_02_PERIOD: "2022.11 - 2023.12",
+  WORK_SDSE_PROJECT_02_DESC:
+    "Contributed as an Analytics EU team member to maintaining and enhancing the accuracy and relevance of data reports in Adobe Analytics.",
+  WORK_SDSE_PROJECT_02_OUTCOME: "//outcome//",
+  WORK_SDSE_PROJECT_02_TECH: "HTML/CSS,Adobe Analytics",
   WORK_SDSE_PROJECT_02_ROLE:
-    "Constructured entire page layout and updated IDE UI",
+    "Provided support for accurate and effective tagging implementation on local microsites and global common pages, and conducted post-implementation QA testing to ensure proper firing of tags and accurate data capture.",
   WORK_SDSE_PROJECT_02_DETAILS_01:
-    "Developed new pages and reconstructured page because of seperated service",
-  WORK_SDSE_PROJECT_02_DETAILS_02: "Reconstructured IDE ,updated of entire UI ",
+    "Conducted training sessions to provide local users with technical knowledge and skills related to analytics tools and techniques.",
 
   /* Codebrick */
-  WORK_CB_PROJECT_01_TITLE: "codebrick project 1",
-  WORK_CB_PROJECT_01_PERIOD: "2019.10 - 2020.01",
+  WORK_CB_PROJECT_01_TITLE: "Omni channel shopping platform",
+  WORK_CB_PROJECT_01_PERIOD: "2022.02 - 2022.07",
   WORK_CB_PROJECT_01_DESC:
-    "Online video coding education platform by using webRTC",
-  // WORK_CB_PROJECT_01_FEATURES:
-  //   "온라인 수업, 선생님과 학생의 에디터 상태 공유, SMS, 수업예약 등",
-  WORK_CB_PROJECT_01_OUTCOME: "Launch of `Wizlive` service",
-  // WORK_CB_PROJECT_01_TECH: "react,js,node.js,mysql,HTML/CSS",
+    "Worked an a team that provided one stop solution for an online business seller to develop UI",
+  WORK_CB_PROJECT_01_OUTCOME: "//outcome//",
+  WORK_CB_PROJECT_01_TECH: "js,Vue,HTML/CSS,DynamoDB",
   WORK_CB_PROJECT_01_ROLE:
-    "Developed class reservation system and Developed at home page part of front-end,back-end",
+    "Worked an a team that provided one stop solution for an online business seller to develop UI",
   WORK_CB_PROJECT_01_DETAILS_01:
-    " Developed reservation of teacher/student(class synchronization, SMS, db table structure, UI)",
+    "Applied tese code at the project to debug efficiently",
   WORK_CB_PROJECT_01_DETAILS_02:
-    "Developed student's class state on back-end and front-end",
-  WORK_CB_PROJECT_01_DETAILS_03: "Developed main page UI of service",
+    "Collaborated with project managers and designers to deliever efficient soultions",
 
-  WORK_CB_PROJECT_02_TITLE: "codebrick project 2",
-  WORK_CB_PROJECT_02_PERIOD: "2020.02 - 2020.04",
-  WORK_CB_PROJECT_02_DESC: " Separated services user service from IDE editor",
-  // WORK_CB_PROJECT_02_FEATURES:
-  //   "코드 에디터, 에디터 튜토리얼 , 구독, 좋아요, 게시판 등",
-  WORK_CB_PROJECT_02_OUTCOME:
-    "Got more users, created user community and launched of service",
-  // WORK_CB_PROJECT_02_TECH: "react,js,node.js,mysql,HTML/CSS",
+  WORK_CB_PROJECT_02_TITLE: "generator shopping web site publish function ",
+  WORK_CB_PROJECT_02_PERIOD: "2021.12 - 2022.01",
+  WORK_CB_PROJECT_02_DESC: "upgrade the shopping mall generator",
+  WORK_CB_PROJECT_02_OUTCOME: "//outcome//",
+  WORK_CB_PROJECT_02_TECH: "js,Vue,HTML/CSS,DynamoDB,AWS,Go",
   WORK_CB_PROJECT_02_ROLE:
-    "Constructured entire page layout and updated IDE UI",
+    "Contributed to upgrate the shopping mall's template generator",
   WORK_CB_PROJECT_02_DETAILS_01:
-    "Developed new pages and reconstructured page because of seperated service",
-  WORK_CB_PROJECT_02_DETAILS_02: "Reconstructured IDE ,updated of entire UI ",
+    "Updated the generator function which user can check the preview before they applied in practice",
+  WORK_CB_PROJECT_02_DETAILS_02: "updated of entire UI ",
 
   /* wizschool */
   WORK_WIZ_PROJECT_01_TITLE: "Developed `wizlive` service",

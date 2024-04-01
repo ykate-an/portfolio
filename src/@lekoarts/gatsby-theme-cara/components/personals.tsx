@@ -11,7 +11,7 @@ import {
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
 import { Themed } from "@theme-ui/mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import PersonalsMDX from "../sections/Personals.mdx";
+import PersonalsMDX from "../sections/personals.mdx";
 
 const Personals = ({
   offset,

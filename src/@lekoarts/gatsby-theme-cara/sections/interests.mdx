@@ -1,12 +1,16 @@
 import { ko, en } from "../../../locale";
+import { interests } from "../../../database";
+import { Badge } from "theme-ui";
 
 ## Interests
 
-> {en["INTEREST_READING"]}
+{Object.keys(interests).map((item)=>{
+return (
 
-> {en["INTEREST_COOKING"]}
+<Badge backgroundColor="icon_pink" m={1} p={2}>
+  {en[`${interests[item]}`]}
+</Badge>
+)
 
-> {en["INTEREST_SURFING"]}
-
-> {en["INTEREST_SWIMMING"]}
-> ../../../locale/index.mjs
+})
+}

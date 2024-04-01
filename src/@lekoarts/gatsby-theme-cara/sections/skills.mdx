@@ -1,29 +1,43 @@
 import { ko, en } from "../../../locale/index.mjs";
+import { skills } from "../../../database.mjs";
+import { Badge, Text } from "theme-ui";
 
-## Skills
+## {<Text>Skills</Text>}
 
-> {en["SKILL_NODE"]}
+#
 
-> {en["SKILL_DOCKER"]}
+#
 
-> {en["SKILL_NGINX"]}
+#### Backend
 
-> {en["SKILL_PHP"]}
+{Object.keys(skills.backend).map((item)=>{
+return(
 
-> {en["SKILL_REACT"]}
+<Badge backgroundColor="icon_purple" m={1} p={2}>
+  {en[`${skills.backend[item]}`]}
+</Badge>
+)}) }
 
-> {en["SKILL_HTML_CSS"]}
+#
 
-> {en["SKILL_JAVASCRIPT"]}
+#### Frontend
 
-> {en["SKILL_FLUTTER"]}
+{Object.keys(skills.frontend).map((item)=>{
+return(
 
-> {en["SKILL_BOOTSTRAP"]}
+<Badge backgroundColor="icon_purple" m={1} p={2}>
+  {en[`${skills.frontend[item]}`]}
+</Badge>
+)}) }
 
-> {en["SKILL_AWS"]}
+#
 
-> {en["SKILL_ZENKINS"]}
+#### Others
 
-> {en["SKILL_GIT"]}
+{Object.keys(skills.others).map((item)=>{
+return(
 
-> {en["SKILL_NOTION"]}
+<Badge backgroundColor="icon_purple" m={1} p={2}>
+  {en[`${skills.others[item]}`]}
+</Badge>
+)}) }
