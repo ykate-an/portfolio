@@ -8,7 +8,7 @@ const ko = {
   HEADER_RESUME_LINK: "yeokyeong-resume.github.io",
 
   /* intro */
-  INTRO_TITLE: "Hello. my name is Yeo-kyeong An,",
+  INTRO_TITLE: "Hi. I'm YeoKyeong An,",
   INTRO_HINT: "Tip: you can just call me Kate😄",
 
   INTRO_DESCRIPTION:

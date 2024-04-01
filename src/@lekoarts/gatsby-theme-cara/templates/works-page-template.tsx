@@ -20,11 +20,9 @@ const Cara = ({ pageContext }: { pageContext: Object }) => {
         <Themed.h5>{en[`${position}`]}</Themed.h5>
         <Themed.h5>{en[`${tech}`]}</Themed.h5>
 
-        {
-          projects.map((project, idx) => {
-            return (<ProjectItem project={project} />)
-          })}
-
+        {projects.map((project, idx) => {
+          return <ProjectItem project={project} />;
+        })}
       </Parallax>
     </Layout>
   );
