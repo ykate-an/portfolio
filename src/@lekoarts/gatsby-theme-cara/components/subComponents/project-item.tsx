@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import * as React from "react";
 import { Themed } from "@theme-ui/mdx";
 import { ko, en } from "../../../../locale/index.mjs";
@@ -31,27 +32,41 @@ const ProjectItem = ({ project }: { project: Object }) => {
         <Themed.h6>{en[`${period}`]}</Themed.h6>
       </Themed.div>
 
-      {outcome && <Themed.h5>{en[`${outcome}`]}</Themed.h5>}
+      {outcome && (
+        <Themed.div>
+          <Themed.em>Outcome </Themed.em>
+          <Themed.h6>{en[`${outcome}`]}</Themed.h6>
+        </Themed.div>
+      )}
 
-      {details &&
-        [role, ...details].map((detail, i) => {
-          return (
-            <Themed.ul>
-              <Themed.li key={i}> {en[`${detail}`]}</Themed.li>
-            </Themed.ul>
-          );
-        })}
-      {appendix &&
-        appendix.map((img, i) => {
-          return (
-            <img
-              src={require(`../../../../assets/${img}`).default}
-              key={i}
-              alt="img"
-              style={{ width: "200px", height: "200px" }}
-            />
-          );
-        })}
+      <Themed.div>
+        <Themed.em>Details </Themed.em>
+        <Themed.ul
+          sx={{
+            padding: "0",
+            paddingLeft: "15px",
+            marginTop: "-1px",
+            "list-style-type": "circle",
+          }}
+        >
+          {details &&
+            [role, ...details].map((detail, i) => {
+              return <Themed.li key={i}> {en[`${detail}`]}</Themed.li>;
+            })}
+        </Themed.ul>
+
+        {appendix &&
+          appendix.map((img, i) => {
+            return (
+              <img
+                src={require(`../../../../assets/${img}`).default}
+                key={i}
+                alt="img"
+                style={{ width: "200px", height: "200px" }}
+              />
+            );
+          })}
+      </Themed.div>
     </Paragraph>
   );
 };
