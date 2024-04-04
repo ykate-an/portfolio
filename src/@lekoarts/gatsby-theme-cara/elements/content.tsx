@@ -1,17 +1,24 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { ParallaxLayer } from "@react-spring/parallax"
+import { jsx } from "theme-ui";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 type ContentProps = {
-  speed: number
-  offset: number
-  children: React.ReactNode
-  className?: string
-  factor?: number
-  justifyContent?:string
-}
+  speed: number;
+  offset: number;
+  children: React.ReactNode;
+  className?: string;
+  factor?: number;
+  justifyContent?: string;
+};
 
-const Content = ({ speed, offset, children, className = ``, factor = 1, justifyContent=`center` }: ContentProps) => (
+const Content = ({
+  speed,
+  offset,
+  children,
+  className = ``,
+  factor = 1,
+  justifyContent = `center`,
+}: ContentProps) => (
   <ParallaxLayer
     sx={{
       padding: [3, 4, 4, 5],
@@ -20,6 +27,7 @@ const Content = ({ speed, offset, children, className = ``, factor = 1, justifyC
       alignItems: `center`,
       justifyContent: justifyContent,
       zIndex: 50,
+      border: "1px solid red",
     }}
     speed={speed}
     offset={offset}
@@ -28,6 +36,6 @@ const Content = ({ speed, offset, children, className = ``, factor = 1, justifyC
   >
     {children}
   </ParallaxLayer>
-)
+);
 
-export default Content
+export default Content;

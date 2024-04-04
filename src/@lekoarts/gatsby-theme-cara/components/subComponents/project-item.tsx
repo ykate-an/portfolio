@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Themed } from "@theme-ui/mdx";
 import { ko, en } from "../../../../locale/index.mjs";
+import { jsx, Badge, Paragraph } from "theme-ui";
 
 const ProjectItem = ({ project }: { project: Object }) => {
   const {
@@ -14,17 +15,26 @@ const ProjectItem = ({ project }: { project: Object }) => {
     outcome = undefined,
   } = project;
   return (
-    <>
-      <Themed.h1>{en[`${title}`]}</Themed.h1>
-      <Themed.h5>{en[`${where}`]}</Themed.h5>
-      <Themed.h5>{en[`${period}`]}</Themed.h5>
-      <Themed.h5>{en[`${description}`]}</Themed.h5>
-      <Themed.h5>{en[`${role}`]}</Themed.h5>
+    <Paragraph my={5}>
+      <Themed.div>
+        <Themed.em>Project </Themed.em>
+        <Themed.h4>{en[`${title}`]}</Themed.h4>
+      </Themed.div>
+
+      <Themed.div>
+        <Themed.em>Overview </Themed.em>
+        <Themed.h6>{en[`${description}`]}</Themed.h6>
+      </Themed.div>
+
+      <Themed.div>
+        <Themed.em>Period </Themed.em>
+        <Themed.h6>{en[`${period}`]}</Themed.h6>
+      </Themed.div>
 
       {outcome && <Themed.h5>{en[`${outcome}`]}</Themed.h5>}
 
       {details &&
-        details.map((detail, i) => {
+        [role, ...details].map((detail, i) => {
           return (
             <Themed.ul>
               <Themed.li key={i}> {en[`${detail}`]}</Themed.li>
@@ -42,7 +52,7 @@ const ProjectItem = ({ project }: { project: Object }) => {
             />
           );
         })}
-    </>
+    </Paragraph>
   );
 };
 
