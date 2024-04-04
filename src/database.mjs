@@ -5,6 +5,7 @@ const works = [
     period: "WORK_SDSE_PERIOD",
     description: "WORK_SDSE_DESC",
     path: "sdse",
+    pages: 1.5,
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -22,9 +23,7 @@ const works = [
         description: "WORK_SDSE_PROJECT_01_DESC",
         role: "WORK_SDSE_PROJECT_01_ROLE",
         features: "WORK_SDSE_PROJECT_01_FEATURES",
-        outcome: "WORK_SDSE_PROJECT_01_OUTCOME",
         tech: "WORK_SDSE_PROJECT_01_TECH",
-        link: "https://wizlive.com/",
         details: [
           "WORK_SDSE_PROJECT_01_DETAILS_01",
           "WORK_SDSE_PROJECT_01_DETAILS_02",
@@ -37,9 +36,7 @@ const works = [
         description: "WORK_SDSE_PROJECT_02_DESC",
         role: "WORK_SDSE_PROJECT_02_ROLE",
         features: "WORK_SDSE_PROJECT_02_FEATURES",
-        outcome: "WORK_SDSE_PROJECT_02_OUTCOME",
         tech: "WORK_SDSE_PROJECT_02_TECH",
-        link: "https://www.wizlab.net",
         details: [
           "WORK_SDSE_PROJECT_02_DETAILS_01",
           "WORK_SDSE_PROJECT_02_DETAILS_02",
@@ -53,6 +50,7 @@ const works = [
     period: "WORK_CB_PERIOD",
     description: "WORK_CB_DESC",
     path: "codebrick",
+    pages: 1.5,
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -70,13 +68,10 @@ const works = [
         description: "WORK_CB_PROJECT_01_DESC",
         role: "WORK_CB_PROJECT_01_ROLE",
         features: "WORK_CB_PROJECT_01_FEATURES",
-        outcome: "WORK_CB_PROJECT_01_OUTCOME",
         tech: "WORK_CB_PROJECT_01_TECH",
-        link: "https://wizlive.com/",
         details: [
           "WORK_CB_PROJECT_01_DETAILS_01",
           "WORK_CB_PROJECT_01_DETAILS_02",
-          "WORK_CB_PROJECT_01_DETAILS_03",
         ],
       },
       {
@@ -85,9 +80,7 @@ const works = [
         description: "WORK_CB_PROJECT_02_DESC",
         role: "WORK_CB_PROJECT_02_ROLE",
         features: "WORK_CB_PROJECT_02_FEATURES",
-        outcome: "WORK_CB_PROJECT_02_OUTCOME",
         tech: "WORK_CB_PROJECT_02_TECH",
-        link: "https://www.wizlab.net",
         details: [
           "WORK_CB_PROJECT_02_DETAILS_01",
           "WORK_CB_PROJECT_02_DETAILS_02",
@@ -101,6 +94,7 @@ const works = [
     period: "WORK_WIZ_PERIOD",
     description: "WORK_WIZ_DESC",
     path: "wizschool",
+    pages: 6.5,
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -258,6 +252,7 @@ const works = [
     period: "WORK_HACKERS_PERIOD",
     description: "WORK_HACKERS_DESC",
     path: "mofas",
+    pages: 1,
     tech: ["SKILL_PHP", "SKILL_BOOTSTRAP", "SKILL_HTML_CSS", "SKILL_NGINX"],
     projects: [
       {
