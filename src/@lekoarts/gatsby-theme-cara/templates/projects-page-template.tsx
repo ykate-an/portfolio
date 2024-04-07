@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Badge, Paragraph } from "theme-ui";
 import * as React from "react";
+import Slider from "react-slick";
 import type { HeadFC } from "gatsby";
 import { Parallax } from "@react-spring/parallax";
 import { Themed } from "@theme-ui/mdx";
@@ -17,6 +18,8 @@ import {
   UpDownWide,
   waveAnimation,
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
   console.log(pageContext, 111, "pageContext in project-template");
@@ -40,6 +43,15 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
   const totalPages = pages + introSize + footerSize;
   const footerOffset = totalPages - footerSize;
 
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    waitForAnimate: false,
+  };
   return (
     <Layout>
       <Parallax pages={5}>
@@ -129,17 +141,24 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
                     return <Themed.li key={i}> {en[`${detail}`]}</Themed.li>;
                   })}
                 </Themed.ul>
-                {appendix &&
-                  appendix.map((img, i) => {
-                    return (
-                      <img
-                        src={require(`../../../assets/${img}`).default}
-                        key={i}
-                        alt="img"
-                        style={{ width: "200px", height: "200px" }}
-                      />
-                    );
-                  })}
+                <Slider
+                  {...settings}
+                  style={{ width: "50%", margin: "0 auto" }}
+                >
+                  {appendix &&
+                    appendix.map((img, i) => {
+                      return (
+                        <div>
+                          <img
+                            src={require(`../../../assets/${img}`).default}
+                            key={i}
+                            alt="img"
+                            style={{ width: "70%", margin: "0 auto" }}
+                          />
+                        </div>
+                      );
+                    })}
+                </Slider>
               </Themed.div>
             </Inner>
           </Content>
