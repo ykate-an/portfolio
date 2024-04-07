@@ -50,6 +50,8 @@ const en = {
   SKILL_HTML_CSS: "HTML/CSS",
   SKILL_JAVASCRIPT: "JavaScript",
   SKILL_FLUTTER: "Flutter",
+  SKILL_JAVA: "Java",
+  SKILL_CPP: "C++",
   SKILL_BOOTSTRAP: "Bootstrap",
   SKILL_AWS: "Aws",
   SKILL_ZENKINS: "Zenkins",
@@ -365,9 +367,9 @@ const en = {
   PROJECT_DIVE_PERIOD: "2020.08 - 2020.11",
   PROJECT_DIVE_OUTCOME: "Launch at google play store and app store",
   PROJECT_DIVE_ROLE:
-    "Developed UI about recording my score and participated in idea meeing",
+    "Contributed as a front-end developer, collaborating with designers to develop the UI part and  proposed some ideas from the initial planning stages and ",
   PROJECT_DIVE_DESC:
-    "Developed a diary app to record and track how I felt during theday",
+    "Launched an emotion-tracking application designed to capture daily emotions and monitor personal well-being. The app analyses users' emotional states to provide customized suggestions for improving their mood and overall mental wellness",
   PROJECT_DIVE_DETAILS_01: "Supports both iOS, android platform using Flutter",
   PROJECT_DIVE_DETAILS_02:
     "Collaborated with planner,designer and other developers",
