@@ -2,7 +2,7 @@
 import * as React from "react";
 import { Themed } from "@theme-ui/mdx";
 import { ko, en } from "../../../../locale/index.mjs";
-import { jsx, Badge, Paragraph } from "theme-ui";
+import { jsx, Badge, Paragraph, Text } from "theme-ui";
 
 const ProjectItem = ({ project }: { project: Object }) => {
   const {
@@ -19,7 +19,9 @@ const ProjectItem = ({ project }: { project: Object }) => {
     <Paragraph my={5}>
       <Themed.div>
         <Themed.em>Project </Themed.em>
-        <Themed.h4>{en[`${title}`]}</Themed.h4>
+        <Themed.h4>
+          <Text color="primary">{en[`${title}`]}</Text>
+        </Themed.h4>
       </Themed.div>
 
       <Themed.div>
