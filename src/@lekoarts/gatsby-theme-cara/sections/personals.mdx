@@ -8,6 +8,7 @@ export const bgColors = [
   "linear-gradient(to right, #D4145A 0%, #FBB03B 100%)",
   "linear-gradient(to right, #662D8C 0%, #ED1E79 100%)",
 ];
+
 export const personals = projects.map((project, idx) => {
   return {
     ...project,
@@ -15,21 +16,19 @@ export const personals = projects.map((project, idx) => {
   };
 });
 
-## {<Text>Personal projects</Text>}
+## {<Text>Personal Projects</Text>}
 
 {Object.keys(personals).map((key) => {
-
 return (
 
 <ProjectCard
-title={en[`${personals[key].title}`]}
-link={`/${personals[key].path}`}
-bg={personals[key].bg}
-key={key}>
-{<Paragraph>{en[`${personals[key].role}`]}</Paragraph>}
-{<Paragraph pt={1}>{en[`${personals[key].period}`]}</Paragraph>}
-{<Paragraph pt={3}>{en[`${personals[key].description}`]}</Paragraph>}
-
-</ProjectCard>)
-
-})}
+  title={en[`${personals[key].title}`]}
+  link={`/${personals[key].path}`}
+  bg={personals[key].bg}
+  key={key}
+>
+  {<Paragraph>{en[`${personals[key].role}`]}</Paragraph>}
+  {<Paragraph pt={1}>{en[`${personals[key].period}`]}</Paragraph>}
+  {<Paragraph pt={3}>{en[`${personals[key].description}`]}</Paragraph>}
+</ProjectCard>
+); })}

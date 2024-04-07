@@ -5,6 +5,7 @@ const works = [
     period: "WORK_SDSE_PERIOD",
     description: "WORK_SDSE_DESC",
     path: "sdse",
+    pages: 1.5,
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -13,7 +14,6 @@ const works = [
       "SKILL_AWS",
       "SKILL_GIT",
       "SKILL_DOCKER",
-      "SKILL_GIT",
     ],
     projects: [
       {
@@ -22,9 +22,7 @@ const works = [
         description: "WORK_SDSE_PROJECT_01_DESC",
         role: "WORK_SDSE_PROJECT_01_ROLE",
         features: "WORK_SDSE_PROJECT_01_FEATURES",
-        outcome: "WORK_SDSE_PROJECT_01_OUTCOME",
         tech: "WORK_SDSE_PROJECT_01_TECH",
-        link: "https://wizlive.com/",
         details: [
           "WORK_SDSE_PROJECT_01_DETAILS_01",
           "WORK_SDSE_PROJECT_01_DETAILS_02",
@@ -37,9 +35,7 @@ const works = [
         description: "WORK_SDSE_PROJECT_02_DESC",
         role: "WORK_SDSE_PROJECT_02_ROLE",
         features: "WORK_SDSE_PROJECT_02_FEATURES",
-        outcome: "WORK_SDSE_PROJECT_02_OUTCOME",
         tech: "WORK_SDSE_PROJECT_02_TECH",
-        link: "https://www.wizlab.net",
         details: [
           "WORK_SDSE_PROJECT_02_DETAILS_01",
           "WORK_SDSE_PROJECT_02_DETAILS_02",
@@ -53,6 +49,7 @@ const works = [
     period: "WORK_CB_PERIOD",
     description: "WORK_CB_DESC",
     path: "codebrick",
+    pages: 1.5,
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -70,13 +67,10 @@ const works = [
         description: "WORK_CB_PROJECT_01_DESC",
         role: "WORK_CB_PROJECT_01_ROLE",
         features: "WORK_CB_PROJECT_01_FEATURES",
-        outcome: "WORK_CB_PROJECT_01_OUTCOME",
         tech: "WORK_CB_PROJECT_01_TECH",
-        link: "https://wizlive.com/",
         details: [
           "WORK_CB_PROJECT_01_DETAILS_01",
           "WORK_CB_PROJECT_01_DETAILS_02",
-          "WORK_CB_PROJECT_01_DETAILS_03",
         ],
       },
       {
@@ -85,9 +79,7 @@ const works = [
         description: "WORK_CB_PROJECT_02_DESC",
         role: "WORK_CB_PROJECT_02_ROLE",
         features: "WORK_CB_PROJECT_02_FEATURES",
-        outcome: "WORK_CB_PROJECT_02_OUTCOME",
         tech: "WORK_CB_PROJECT_02_TECH",
-        link: "https://www.wizlab.net",
         details: [
           "WORK_CB_PROJECT_02_DETAILS_01",
           "WORK_CB_PROJECT_02_DETAILS_02",
@@ -101,6 +93,7 @@ const works = [
     period: "WORK_WIZ_PERIOD",
     description: "WORK_WIZ_DESC",
     path: "wizschool",
+    pages: 6.5,
     tech: [
       "SKILL_JAVASCRIPT",
       "SKILL_REACT",
@@ -135,7 +128,6 @@ const works = [
         features: "WORK_WIZ_PROJECT_02_FEATURES",
         outcome: "WORK_WIZ_PROJECT_02_OUTCOME",
         tech: "WORK_WIZ_PROJECT_02_TECH",
-        link: "https://www.wizlab.net",
         details: [
           "WORK_WIZ_PROJECT_02_DETAILS_01",
           "WORK_WIZ_PROJECT_02_DETAILS_02",
@@ -149,7 +141,6 @@ const works = [
         features: "WORK_WIZ_PROJECT_03_FEATURES",
         outcome: "WORK_WIZ_PROJECT_03_OUTCOME",
         tech: "WORK_WIZ_PROJECT_03_TECH",
-        link: "https://wizschool.io/",
         details: ["WORK_WIZ_PROJECT_03_DETAILS_01"],
       },
       {
@@ -242,7 +233,7 @@ const works = [
         features: "WORK_WIZ_PROJECT_10_FEATURES",
         outcome: "WORK_WIZ_PROJECT_10_OUTCOME",
         tech: "WORK_WIZ_PROJECT_10_TECH",
-        link: "https://bangcl.co.kr/",
+        link: "https://www.fnnews.com/news/202104011457276511",
         details: [
           "WORK_WIZ_PROJECT_10_DETAILS_01",
           "WORK_WIZ_PROJECT_10_DETAILS_02",
@@ -258,6 +249,7 @@ const works = [
     period: "WORK_HACKERS_PERIOD",
     description: "WORK_HACKERS_DESC",
     path: "mofas",
+    pages: 1,
     tech: ["SKILL_PHP", "SKILL_BOOTSTRAP", "SKILL_HTML_CSS", "SKILL_NGINX"],
     projects: [
       {
@@ -319,10 +311,15 @@ const projects = [
     description: "PROJECT_DIVE_DESC",
     role: "PROJECT_DIVE_ROLE",
     outcome: "PROJECT_DIVE_OUTCOME",
-    link: "https://play.google.com/store/apps/details?id=com.gsb.dive",
+    // link: "https://play.google.com/store/apps/details?id=com.gsb.dive",
     details: ["PROJECT_DIVE_DETAILS_01", "PROJECT_DIVE_DETAILS_02"],
     path: "dive-app",
+    pages: 1,
+    tech: ["SKILL_FLUTTER", "SKILL_GIT"],
     appendix: [
+      "dive_intro_1.png",
+      "dive_intro_2.png",
+      "dive_intro_3.png",
       "dive_1.jpeg",
       "dive_2.jpeg",
       "dive_3.jpeg",
@@ -340,6 +337,8 @@ const projects = [
     outcome: "PROJECT_LECTURE_OUTCOME",
     details: ["PROJECT_LECTURE_DETAILS_01", "PROJECT_LECTURE_DETAILS_02"],
     path: "lecture-app",
+    pages: 1,
+    tech: ["SKILL_JAVA", "SKILL_GIT"],
     appendix: [
       "class_1.png",
       "class_2.png",
@@ -360,13 +359,9 @@ const projects = [
       "PROJECT_THEIF_DETAILS_03",
     ],
     path: "thief-pc",
-    appendix: [
-      "thief_1.png",
-      "class_2.png",
-      "class_3.png",
-      "class_4.png",
-      "class_5.png",
-    ],
+    pages: 1,
+    tech: ["SKILL_CPP", "SKILL_GIT"],
+    appendix: ["thief_1.png", "thief_2.png"],
   },
 ];
 
