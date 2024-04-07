@@ -14,6 +14,7 @@ const ProjectItem = ({ project }: { project: Object }) => {
     details = undefined,
     appendix = undefined,
     outcome = undefined,
+    link = undefined,
   } = project;
   return (
     <Paragraph my={5}>
@@ -38,6 +39,13 @@ const ProjectItem = ({ project }: { project: Object }) => {
         <Themed.div>
           <Themed.em>Outcome </Themed.em>
           <Themed.h6>{en[`${outcome}`]}</Themed.h6>
+        </Themed.div>
+      )}
+
+      {link && (
+        <Themed.div>
+          <Themed.em>Relevant Link</Themed.em>
+          <Themed.h6>{en[`${link}`]}</Themed.h6>
         </Themed.div>
       )}
 

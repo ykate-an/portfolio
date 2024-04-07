@@ -31,8 +31,8 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
     outcome,
     link,
     appendix,
+    tech,
   } = pageContext.contentData;
-  //appendix,link,outcome
 
   let { pages = 1 } = pageContext.contentData;
   const introSize = 1;
@@ -61,6 +61,10 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
                     <Themed.h6>{en[`${period}`]}</Themed.h6>
                   </Themed.div>
                   <Themed.div>
+                    <Themed.em>Where</Themed.em>
+                    <Themed.h6>{en[`${where}`]}</Themed.h6>
+                  </Themed.div>
+                  <Themed.div>
                     <Themed.em>Position</Themed.em>
                     <Themed.h6> {en[`${role}`]}</Themed.h6>
                   </Themed.div>
@@ -68,7 +72,7 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
                     <Themed.em>Project Overview</Themed.em>
                     <Themed.h6>{en[`${description}`]}</Themed.h6>
                   </Themed.div>
-                  {/* <Themed.div>
+                  <Themed.div>
                     <Themed.em>Technical Skills</Themed.em>
                     <Themed.div>
                       {tech.map((item) => {
@@ -79,7 +83,7 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
                         );
                       })}
                     </Themed.div>
-                  </Themed.div> */}
+                  </Themed.div>
                 </Themed.div>
               </div>
             </Inner>
@@ -105,7 +109,12 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
                   <Themed.h6>{en[`${outcome}`]}</Themed.h6>
                 </Themed.div>
               )}
-
+              {link && (
+                <Themed.div>
+                  <Themed.em>Relevant Link</Themed.em>
+                  <Themed.h6>{en[`${link}`]}</Themed.h6>
+                </Themed.div>
+              )}
               <Themed.div>
                 <Themed.em>Details</Themed.em>
                 <Themed.ul
