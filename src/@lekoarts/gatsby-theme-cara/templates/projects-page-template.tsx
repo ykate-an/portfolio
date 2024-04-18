@@ -22,8 +22,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
 const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
-  console.log(pageContext, 111, "pageContext in project-template");
-
   const {
     description,
     title,
@@ -40,31 +38,33 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
   let { pages = 1 } = pageContext.contentData;
   const introSize = 1;
   const footerSize = 0.2;
+  // const totalPages = 1;
   const totalPages = pages + introSize + footerSize;
   const footerOffset = totalPages - footerSize;
-
-  // const settings = {
-  //   dots: true,
-  //   fade: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   waitForAnimate: false,
-  // };
+  console.log(totalPages, 111, "totalPages");
 
   const settings = {
-    className: "slider variable-width",
     dots: true,
+    fade: true,
     infinite: true,
-    centerMode: true,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true,
+    waitForAnimate: false,
   };
+
+  // const settings = {
+  //   className: "slider variable-width",
+  //   dots: true,
+  //   infinite: true,
+  //   centerMode: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   variableWidth: true,
+  // };
   return (
     <Layout>
-      <Parallax pages={5}>
+      <Parallax pages={totalPages}>
         <div className="project__intro">
           <Divider
             bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
@@ -163,7 +163,7 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
                             src={require(`../../../assets/${img}`).default}
                             key={i}
                             alt="img"
-                            style={{ width: "65%", margin: "0 auto" }}
+                            style={{ width: "60%", margin: "0 auto" }}
                           />
                         </div>
                       );

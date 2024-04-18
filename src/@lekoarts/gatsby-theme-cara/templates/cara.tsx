@@ -1,19 +1,22 @@
+/** @jsx jsx */
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import { Parallax } from "@react-spring/parallax";
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
-// import Hero from "@lekoarts/gatsby-theme-cara/src/components/hero";
 import Hero from "../components/hero";
 import Works from "../components/works";
 import Personals from "../components/personals";
 import About from "../components/about";
-import Contact from "@lekoarts/gatsby-theme-cara/src/components/contact";
+import Contact from "../components/contact";
 import Seo from "@lekoarts/gatsby-theme-cara/src/components/seo";
 import Skills from "../components/skills";
 import Interests from "../components/interests";
 import OnePage from "../components/onePage";
+import { useColorMode, jsx } from "theme-ui";
 
 const Cara = () => {
+  useColorMode("dark");
+
   return (
     <Layout>
       {/* <OnePage /> */}

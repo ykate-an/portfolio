@@ -27,7 +27,7 @@ const Content = ({
       alignItems: `center`,
       justifyContent: justifyContent,
       zIndex: 50,
-      border: "1px solid red",
+      // border: "1px solid red",
     }}
     speed={speed}
     offset={offset}

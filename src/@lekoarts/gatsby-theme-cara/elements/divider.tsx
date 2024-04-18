@@ -30,7 +30,7 @@ const Divider = ({
       height: `full`,
       background: bg,
       backgroundColor: bg,
-      border: "4px dotted pink",
+      // border: "4px dotted pink",
       "#contact-wave": {
         color: fill,
         fill: `currentColor`,
