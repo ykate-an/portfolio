@@ -21,7 +21,7 @@ const en = {
   EDUCATION_UNIVERSITY_NAME: "The Catholic University of Korea(CUK)",
   EDUCATION_UNIVERSITY_MAJOR: "Bachelor of Engineering",
   EDUCATION_UNIVERSITY_PERIOD: "2015.03 - 2017.08",
-  EDUCATION_UNIVERSITY_SCORE: "3.8 /4.5",
+  EDUCATION_UNIVERSITY_SCORE: "3.8 / 4.5",
 
   /* license/awards */
   LICENSE_ENGINEER_NAME: "Engineer Information Processing",
