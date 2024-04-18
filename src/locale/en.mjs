@@ -78,7 +78,7 @@ const en = {
   WORK_WIZ_DESC:
     "A coding education company, I was in charge of front-end and back-end web development.",
 
-  WORK_HACKERS_NAME: "Mofas(hackersholdings)",
+  WORK_HACKERS_NAME: "Mofas",
   WORK_HACKERS_POSITION: "Junior Web Developer",
   WORK_HACKERS_PERIOD: "2019.01 - 2019.07",
   WORK_HACKERS_DESC:
@@ -362,39 +362,46 @@ const en = {
     "Modified and developed the app that used of  CI(php's framework) by adding functions",
 
   /* projects */
-  PROJECT_DIVE_TITLE: "Developed App `Dive` that record the emotions of a day",
+  /* DIVE */
+  // PROJECT_DIVE_TITLE: "Developed App `Dive` that record the emotions of a day",
+  PROJECT_DIVE_TITLE: "Cross-platform Mobile App,'Dive'",
   PROJECT_DIVE_AT: "Side project",
   PROJECT_DIVE_PERIOD: "2020.08 - 2020.11",
   PROJECT_DIVE_OUTCOME: "Launch at google play store and app store",
-  PROJECT_DIVE_ROLE:
-    "Contributed as a front-end developer, collaborating with designers to develop the UI part and  proposed some ideas from the initial planning stages and ",
+  PROJECT_DIVE_ROLE: "Frontend developer",
   PROJECT_DIVE_DESC:
-    "Launched an emotion-tracking application designed to capture daily emotions and monitor personal well-being. The app analyses users' emotional states to provide customized suggestions for improving their mood and overall mental wellness",
+    "Launched an emotion-tracking application designed to capture daily emotions and monitor personal well-being.",
   PROJECT_DIVE_DETAILS_01: "Supports both iOS, android platform using Flutter",
   PROJECT_DIVE_DETAILS_02:
-    "Collaborated with planner,designer and other developers",
+    "The app analyses users' emotional states to provide customized suggestions for improving their mood and overall mental wellness",
+  PROJECT_DIVE_DETAILS_03:
+    "Contributed as a front-end developer, collaborating with designers to develop the UI part and  proposed some ideas from the initial planning stages",
 
-  PROJECT_LECTURE_TITLE: "Developed a Android App",
+  /* University Lecture App */
+  PROJECT_LECTURE_TITLE: "Android App,'My Lecture'",
   PROJECT_LECTURE_AT: "Improve skills",
   PROJECT_LECTURE_PERIOD: "2018.11-2018.12",
   PROJECT_LECTURE_OUTCOME: "Launch at google play store",
-  PROJECT_LECTURE_ROLE: "Developed in front-end, back-end part ",
+  PROJECT_LECTURE_ROLE: "Frontend and Backend Developer",
   PROJECT_LECTURE_DESC:
     "Developed an Android app that enables university enrollment on mobile.",
   PROJECT_LECTURE_DETAILS_01:
     "Class personnel competition rate, popular class rankings",
   PROJECT_LECTURE_DETAILS_02: "Check for courses that meet your requirements",
 
-  PROJECT_THEIF_TITLE: "Developed a keyboard-controlled 2D game",
+  /* 2D game */
+  PROJECT_THEIF_TITLE: "keyboard-2D game, 'Robbery Rush'",
   PROJECT_THEIF_AT: "University project",
   PROJECT_THEIF_PERIOD: "2016.03-2016.06",
-  PROJECT_THEIF_ROLE: "Developed of items and parts related to thieves",
+  // PROJECT_THEIF_ROLE: "Developed of items and parts related to thieves",
+  PROJECT_THEIF_ROLE: "Game Developer",
   PROJECT_THEIF_DESC:
     "Developed a keyboard-controlled 2D game using SDL library and c++.",
   PROJECT_THEIF_DETAILS_01:
     "A game in which  the police catch the thief, and if the police move while the thief is looking backwards, the game will end.",
   PROJECT_THEIF_DETAILS_02:
     "When a thief is looking ahead, the police eat various items on the street and raise my scores.",
-  PROJECT_THEIF_DETAILS_03: "Collaborated with designer and developer",
+  PROJECT_THEIF_DETAILS_03:
+    "Developed of items and parts related to thieves and collaborated with designer",
 };
 export default en;
