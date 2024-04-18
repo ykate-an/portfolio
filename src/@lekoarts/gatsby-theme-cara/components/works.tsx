@@ -10,6 +10,11 @@ import {
   UpDownWide,
 } from "@lekoarts/gatsby-theme-cara/src/styles/animations";
 import WorksMDX from "../sections/works.mdx";
+import { works } from "../../../database.mjs";
+import { Themed } from "@theme-ui/mdx";
+import { Text, Paragraph } from "theme-ui";
+import ProjectCard from "./project-card";
+import { ko, en } from "../../../locale/index.mjs";
 
 const Works = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   <div>
@@ -35,7 +40,7 @@ const Works = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
             h2: { gridColumn: `-1/1`, color: `white !important` },
           }}
         >
-          <WorksMDX />
+          <WorkCards />
         </div>
       </Inner>
     </Content>
@@ -139,5 +144,50 @@ const Works = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
     </Divider>
   </div>
 );
+
+const WorkCards = () => {
+  const bgColors = [
+    "linear-gradient(to right, #D585FF 0%, #00FFEE 100%)",
+    "linear-gradient(to right, rgba(244,132,132,1) 0%, rgba(238,174,202,1) 30%, rgba(236,245,255,1) 100%)",
+    "linear-gradient(to right, #D4145A 0%, #FBB03B 100%)",
+    "linear-gradient(to right, #662D8C 0%, #ED1E79 100%)",
+  ];
+  const companys = works.map((company, idx) => {
+    return {
+      ...company,
+      bg: bgColors[idx],
+    };
+  });
+
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    waitForAnimate: false,
+  };
+
+  return (
+    <>
+      <Themed.h2>Works</Themed.h2>
+      {companys.map((company) => {
+        return (
+          <ProjectCard
+            title={en[`${company.name}`]}
+            link={`/${company.path}`}
+            bg={company.bg}
+            key={company.path}
+          >
+            {<Paragraph>{en[`${company.position}`]}</Paragraph>}
+            {<Paragraph pt={1}>{en[`${company.period}`]}</Paragraph>}
+            {<Paragraph pt={3}>{en[`${company.description}`]}</Paragraph>}
+          </ProjectCard>
+        );
+      })}
+    </>
+  );
+};
 
 export default Works;
