@@ -25,7 +25,7 @@ const WorkPage = ({ pageContext }: { pageContext: Object }) => {
   let { pages = 1 } = pageContext.contentData;
   const introSize = 1;
   const footerSize = 0.2;
-  const totalPages = pages + introSize + footerSize;
+  const totalPages = (pages + introSize + footerSize) * 0.85;
   const footerOffset = totalPages - footerSize;
 
   return (

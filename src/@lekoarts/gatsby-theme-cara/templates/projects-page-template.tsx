@@ -43,14 +43,24 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
   const totalPages = pages + introSize + footerSize;
   const footerOffset = totalPages - footerSize;
 
+  // const settings = {
+  //   dots: true,
+  //   fade: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   waitForAnimate: false,
+  // };
+
   const settings = {
+    className: "slider variable-width",
     dots: true,
-    fade: true,
     infinite: true,
-    speed: 500,
+    centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    waitForAnimate: false,
+    variableWidth: true,
   };
   return (
     <Layout>
@@ -153,7 +163,7 @@ const ProjectPage = ({ pageContext }: { pageContext: Object }) => {
                             src={require(`../../../assets/${img}`).default}
                             key={i}
                             alt="img"
-                            style={{ width: "70%", margin: "0 auto" }}
+                            style={{ width: "65%", margin: "0 auto" }}
                           />
                         </div>
                       );
